@@ -1,0 +1,163 @@
+.mainContainer
+{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.content
+{
+  height: 70vh;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.weatherImage
+{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px 0 0 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8&w=1000&q=80");
+}
+
+.mainWeatherImage
+{
+  padding: 20px;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+}
+
+.mainWeatherInfo
+{
+  padding: 20px;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+}
+.mainWeatherInfo h1
+{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.weatherInfo
+{
+  height: 100%;
+  width: 70%;
+  background-color: #112a41;
+  border-radius: 20px 30px 30px 00px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todayWeather
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+
+.location
+{
+  height: 100%;
+  width:55%;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.locationInfo
+{
+  height: 80%;
+  width: 80%;
+}
+
+.locationInfo h1
+{
+  font-weight: bold;
+  font-size: 80px;
+}
+.search
+{
+
+  height: 100%;
+  width: 40%;
+  background-color: white;
+  border: 5px solid grey;
+  border-radius: 20px 50px 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serachInfo
+{
+  height: 50%;
+  width: 50%;
+  background-color: blue;
+}
+
+
+
+
+
+.otherDays {
+  height: 50%;
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+  }
+
+  .otherDays > div {
+    background-color: white;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 20px;
+    border: 5px solid black;
+    border-radius: 30px 30px 10px 10px;
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  hr
+  {
+    height: 3px;
+    background-color: black;
+  }
+
+  .tophalf
+  {
+    background-color: #cef0f7;
+    border-radius: 20px 20px 0 0;
+    height: 60%;
+    border-bottom: 5px solid black;
+  }
+
+
+
+.capitalise {
+    text-transform: capitalize;
+}
+
