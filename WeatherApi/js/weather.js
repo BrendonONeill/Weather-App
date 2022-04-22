@@ -1,6 +1,6 @@
 
 
-const apiKey = "api here"
+const apiKey = "api key"
 let name  = "London"
 
 
