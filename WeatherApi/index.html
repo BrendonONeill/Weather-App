@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,104 +7,107 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="weather.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="mainContainer">
+    
+        <div id="mainContainer" class="mainContainer">
             <div class="content">
-            <div class="weatherImage">
-                
-                  <div class="mainWeatherImage">
-                  <img id="i0" src="rain.png" alt="" width="200px" height="200px">
-                  
-                  </div>
-                  <div class="mainWeatherInfo">
-                     <h1 id="w0">Weather</h3>
-                     <h1 id="t0">tempureture</h3>
-                  </div> 
-                     
-                 
-            </div>
-            <div class="weatherInfo">
-                <div class="todayWeather">
+                <div class="mainContent">
                     <div class="location">
-                        <div class="locationInfo">
-                        <h1 id="n">Location</h1>
-                        <h1 id="d0">Date</h1>
+                        <div class="input serachInfo">
+
+                            <h1 class="locationTitle">Pick a Location:</h1>
+                            <input type="text" class="inputValue capitalize" id="city" placeholder="London">
+                            <input id="submit" type="submit" value="Submit" >
+                            <button id="yourLocation">Your Location</button>
+
                         </div>
+                    </div>
+                    <div id="weather" class="weather">
+
+                        <div class="mainWeatherImage">
+                            <img id="i0" src="rain.png" alt="" width="200px" height="200px">
+                            
+                            </div>
+                            <div class="mainWeatherInfo">
+                               <h1 id="w0">Weather</h1>
+                               <h2 id="d0">Date</h2>
+                               <h2 id="t0">tempureture</h2>
+                            </div> 
+                               
 
                     </div>
+                </div>
+                <div class="sideContent">
+                    <div class="todayInfo">
 
-                    <div class="search">
-                    <div class="input serachInfo">
-                        <h1>Pick a Location:</h1>
-                        <input type="text" class="inputValue capitalize" id="city" placeholder="London">
-                        <input id="submit" type="submit" value="Submit" >
-                        <p>*Please make sure to capitalise the location</p>
+                            <div class="locationInfo">
+                            <h1 id="n">Location</h1>
+                            </div>
+                        
                     </div>
-                </div>
-                </div>
-                <div class="otherDays">
-              
-                     <div>
-                      <div class="tophalf">
-                    <img id="i1" src="mist.png" alt="" width="200px" height="200px">
-                    
-                    
-                    </div> 
-                    <h1 id="w1">Weather</h3>
-                    <h1 id="d1">Date</h1>
-                       <h3 id="t1">tempureture</h3>
-                       
-                   </div>
+                    <div class="otherDays">
 
-                   
-              
-                   <div>
-                      <div class="tophalf">
-                    <img id="i2" src="" alt="" width="200px" height="200px">
+                        <div class="days">
+                            <div class="tophalf">
+                          <img id="i1" src="mist.png" alt="" width="100px" height="100px">
+                          
+                          
+                          </div> 
+                          <h1 id="w1">Weather</h3>
+                          <h2 id="d1">Date</h2>
+                            <h3 id="t1">tempureture</h3>
+                             
+                         </div>
+      
+                         
                     
+                         <div class="days">
+                            <div class="tophalf">
+                                <img id="i2" src="mist.png" alt="" width="100px" height="100px">
+                          
+                          
+                          </div> 
+                          <h1 id="w2">Weather</h1>
+                          <h2 id="d2">Date</h2>
+                             <h3 id="t2">tempureture</h3>
+                             
+                         </div>
                     
-                    </div> 
-                    <h1 id="w2">Weather</h3>
-                    <h1 id="d2">Date</h1>
-                       <h3 id="t2">tempureture</h3>
-                       
-                   </div>
-              
-                   <div>
-                      <div class="tophalf">
-                    <img id="i3" src="" alt="" width="200px" height="200px">
+                         <div class="days">
+                            <div class="tophalf">
+                                <img id="i3" src="mist.png" alt="" width="100px" height="100px">
+                          
+                          
+                          </div> 
+                          <h1 id="w3">Weather</h1>
+                          <h2 id="d3">Date</h2>
+                             <h3 id="t3">tempureture</h3>
+                             
+                         </div>
                     
-                    
-                    </div> 
-                    <h1 id="w3">Weather</h3>
-                    <h1 id="d3">Date</h1>
-                       <h3 id="t3">tempureture</h3>
-                       
-                   </div>
-              
-                   <div>
-                      <div class="tophalf">
-                    <img id="i4" src="" alt="" width="200px" height="200px">
-                
-                    </div> 
-                    <h1 id="w4">Weather</h3>
-                    <h1 id="d4">Date</h1>
-                       <h3 id="t4">tempureture</h3>
-                       
-                   </div>
+                         <div class="days">
+                            <div class="tophalf">
+                                <img id="i4" src="mist.png" alt="" width="100px" height="100px">
+                      
+                          </div> 
+                          <h1 id="w4">Weather</h1>
+                          <h2 id="d4">Date</h2>
+                             <h3 id="t4">tempureture</h3>
+                             
+                         </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <p>clean up date</p>
-    <p>clean up ui</p>
-    <p>get weather from your location</p>
-    <p>change image for today's weather and background colour</p>
-    <p>make responsive</p>
+            
 
+
+
+
+        
         <script src="js/weather.js" async defer></script>
     </body>
 </html>

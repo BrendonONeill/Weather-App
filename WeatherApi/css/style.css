@@ -1,0 +1,303 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    font-weight: bold;
+}
+
+h2
+{
+    font-style: italic;
+}
+
+.mainContainer
+{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(0deg, #87cefa, #e1f3fe);
+}
+
+.content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px;
+  background: linear-gradient(0deg, rgb(90, 85, 131) 0%, rgba(145,142,176,1) 100%);
+  border-radius: 10px;
+  width: 320px;
+  height: 2000px;
+  box-shadow: 5px 10px 20px rgb(38, 36, 55) ;
+}
+
+.mainContent
+{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.location
+{
+    width: 100%;
+    height: 20%;
+    color: white;
+    background-color: rgb(54, 51, 78);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: 5px 10px 20px rgb(38, 36, 55) ;
+}
+
+#yourLocation, #submit
+{
+    border-radius: 5px;
+    background-color: rgb(90, 85, 131) ;
+    color: white;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#city
+{
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.weather
+{
+    width: 100%;
+    height: 70%;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    box-shadow: 5px 10px 20px rgb(38, 36, 55) ;
+}
+
+#weather
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8&w=1000&q=80");
+}
+
+.weather h1
+{
+    font-size: 40px;
+}
+.weather h2
+{
+    font-size: 30px;
+}
+
+.sideContent
+{
+
+    width: 300;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.locationTitle
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.todayInfo
+{
+    width: 100%;
+    height: 10%;
+    padding-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(54, 51, 78);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgb(38, 36, 55) ;
+}
+
+.todayInfo h1
+{
+    font-size: 40px;
+}
+
+.otherDays
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.days
+{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(54, 51, 78);
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgb(38, 36, 55) ;
+}
+
+
+
+
+@media only screen and (min-width: 425px) {
+   
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+.mainContent
+{
+    height: 40%;
+}
+
+.content
+{
+height: 1200px;
+  width: 700px;
+}
+
+.location
+{
+    height: 25%;
+    width: 40%;
+    align-self: flex-start;
+}
+
+
+.sideContent
+{
+    height: 55%;
+    justify-content: space-around;
+}
+
+.otherDays
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80%;
+    justify-content:space-evenly;
+    align-content: flex-start;
+}
+
+.todayInfo
+{
+    width: 40%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.days
+{
+    height: 40%;
+    width: 45%;
+    margin-top: 20px;
+    text-align: center;
+}
+  }
+
+
+@media only screen and (min-width: 1200px) {
+ 
+.mainContainer
+{
+padding-top: 5%;
+  margin: auto;
+  height: 100vh;
+}
+
+.content
+{
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  height: 700px;
+}
+
+.mainContent
+{
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.sideContent
+{
+    
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.location
+{
+    width: 70%;
+    height: 20%;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+
+
+.weather
+{
+    width: 90%;
+    height: 60%;
+    position: relative;
+    bottom: 70px;
+}
+
+.todayInfo
+{
+    height: 15%;
+    width: 95%;
+    align-content: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.otherDays
+{
+    width: 100%;
+    height: 80%;
+}
+  }
+
+
+
